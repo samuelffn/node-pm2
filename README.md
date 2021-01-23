@@ -9,10 +9,12 @@ Aplicação simples em node apenas para entender o funcionamento do pm2.
 4) ls (observe que foi criado um arquivo chamado package.json)  
   
 ## Comando para executar o projeto  
-Executando só com o node: **node server.js**  
-Usando o nodemon: **npm run dev**  
-Startando utilizando o pm2:  **pm2 start app.js**  
-Parando utilizando o pm2: **pm2 stop app.js**  
+Esta aplicação pode ser executada de 3 formas diferentes:  
+1- Executando só com o node: **node server.js**  
+2- Usando o nodemon: **npm run dev**  
+    2.1- Para parar utilize o Ctrl + c    
+3- Startando utilizando o pm2:  **pm2 start app.js**  
+    3.1- Parando utilizando o pm2: **pm2 stop app.js**  
 
 ## Acessar o projeto pelo navegador  
 ip_da_aplicacao:porta  
@@ -44,7 +46,7 @@ o -g na instalação significa Global, ou seja, poderemos executar o pm2 de qual
 O pm2 é utilizado para gerenciar processos de uma aplicação, cuidando do start, stop, restart, logs, monitoramento da aplicação, dentre outras coisas. Para mais informações consulte o link deixado acima.  
 Com o pm2 você sua aplicação não fica dependente do terminal para funcionar. Você pode fechar o terminal e ela vai continuar funcionando. Você terá total autonomia, podendo mandar iniciar ou para quando quiser. Neste caso, não precisaríamos mais utilizar o nodemon para startar a aplicação e nem o Ctrl + c para parar a mesma.  
 PM2 é um gerenciador de processo de produção para aplicativos Node.js com um balanceador de carga integrado. Ele permite que você mantenha os aplicativos ativos para sempre, recarregue-os sem tempo de inatividade e facilita as tarefas comuns de administração do sistema.   
-Não é ideal para usar durante o desenvolviento, porque diferente do nodemon, cada alteração feita no código será necessário parar e depois iniciar ou será necessário utilizar o reload all para que o sistema seja recarregado.    
+Não é ideal para usar durante o desenvolviento, porque diferente do nodemon, cada alteração feita no código será necessário parar e depois iniciar ou será necessário utilizar o reload all para que o sistema seja recarregado. É possível iniciar o pm2 utilizando variáveis de ambiante, como por exemplo Dev, Prod, etc.     
 ### Alguns comandos:  
 **pm2 start app.js**: Vai iniciar o serviço da aplicação  
 **pm2 stop app.js**: Vai parar o serviço da aplicação  

@@ -23,14 +23,13 @@ npm install cors
 
 ## nodemon  
 **npm install -D nodemon**  
-Dependência para ser utilizada apenas no ambiente de desenvolvimento.  
+Dependência para ser utilizada apenas no ambiente de desenvolvimento, por isso o -D.  
 Ela faz com que ao salvar alguma alteração o servidor faça a atualização semprecisar parar e executar novamente.  
 Utilização:  
 1) Acessa o package.json  
 2) Em scripts, cria uma nova propriedade: **"dev": "nodemon server.js"**  
 3) No terminal executa a aplicação usando o comando: **npm run dev**  
-Obs.: O npm run serve para executar os comandos que estão em script  
-4) Ao executar a aplicação pela primeira vez ela vai criar o banco de dados.  
+Obs.: O npm run serve para executar os comandos que estão em script   
 
 ## cors  
 **npm install cors**  

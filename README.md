@@ -3,10 +3,10 @@
 Aplicação simples em node apenas para entender o funcionamento do pm2.  
 
 ## Comandos para criação do projeto  
-1) mkdir node-api (nome do diretório do projeto)  
+1) mkdir node-api (que será o nome do diretório do projeto)  
 2) cd node-api  
 3) npm init -y (comando para criação do projeto)  
-4) ls  
+4) ls (observe que foi criado um arquivo chamado package.json)  
   
 ## Comando para executar o projeto  
 Executando só com o node: **node server.js**  
